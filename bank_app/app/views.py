@@ -37,9 +37,9 @@ class AppView1(APIView):
            bank_in_city=[]
 
            if request.method=="GET":
-                    bank_city=Banks_branches.objects.filter(city=city)
-                    for i in range(len(bank_city)):
-                              if bank_name in str(bank_city[i]):
-                                   bank_in_city.append(bank_city[i])
+                    bank_in_city=Banks_branches.objects.filter(bank_name=bank_name,city=city)
+                   # for i in range(len(bank_city)):
+                    #          if bank_name in str(bank_city[i]):
+                     #              bank_in_city.append(bank_city[i])
 
            return  render_to_response('temp.html',{'list':bank_in_city[:6]})
