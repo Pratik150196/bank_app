@@ -1,4 +1,4 @@
 1.http post https://pratikdjangoapp.herokuapp.com/app/token/ username=pratik password=shivam@123
 2.curl https://pratikdjangoapp.herokuapp.com/ifsc/?ifsc=ABHY0065002 -H 'Authorization: Bearer  "which token got after signin"
 3.curl https://pratikdjangoapp.herokuapp.com/name_bank/?name=""&city="" -H 'Authorization: Bearer "which token got after signin"
-in cmd
+i have used curls in terminal for testing 
